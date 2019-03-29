@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Sergey Starikov](https://up.htmlacademy.ru/adaptive/16/user/703703).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
 
