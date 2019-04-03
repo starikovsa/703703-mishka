@@ -6,18 +6,15 @@
   </head>
   <body>
     <header class="main-header">
+      <a class="main-header__link main-header__link--logo" href="index.html">
+        <img class="main-header__image" src="http://placehold.it/86x35" width="86" height="35" alt="MISHKA"></a>
+      <button class="button main-header__button main-header__button--open main-header__button--close" type="button">Меню</button>
       <nav class="main-navigation">
-        <h2 class="visually-hidden">Меню</h2>
         <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--logo"><a class="main-navigation__link main-navigation__link--logo" href="index.html">
-            <img class="main-navigation__image" src="http://placehold.it/86x35" width="86" height="35" alt="MISHKA"></a>
-            <button class="button main-navigation__button main-navigation__button--open" type="button">Открыть меню</button>
-            <button class="button main-navigation__button main-navigation__button--close" type="button">Закрыть меню</button>
-          </li>
-          <li class="main-navigation__item main-navigation__item--catalog"><a class="main-navigation__link main-navigation__link--catalog" href="catalog.html">Каталог заказов</a></li>
-          <li class="main-navigation__item main-navigation__item--order"><a class="main-navigation__link main-navigation__link--order" href="form.html">Вязание на заказ</a></li>
-          <li class="main-navigation__item main-navigation__item--search"><a class="main-navigation__link main-navigation__link--search" href="search.html">Поиск по сайту</a></li>
-          <li class="main-navigation__item main-navigation__item--cart"><a class="main-navigation__link main-navigation__link--cart" href="cart.html">Корзина: пока пусто</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="catalog.html">Каталог заказов</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="search.html">Поиск по сайту</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="cart.html">Корзина: пока пусто</a></li>
         </ul>
       </nav>
     </header>
@@ -26,7 +23,6 @@
         <header class="catalog__header">
           <h2 class="catalog__title">Каталог товаров</h2>
         </header>
-        <div class="catalog__container">
           <ul class="catalog__list">
             <li class="catalog__item">
               <article class="card">
@@ -58,23 +54,20 @@
                 </article>
             </li>
           </ul>
-        </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-footer__social-list">
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link main-footer__social-link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link main-footer__social-link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link main-footer__social-link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+        </li>
+      </ul>
       <div class="main-footer__copyright">
         <p class="main-footer__developed">Разработано</p>
         <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
