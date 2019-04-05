@@ -88,25 +88,17 @@
         <header class="contacts__header">
           <h2 class="contacts__title">Контакты</h2>
         </header>
-        <address>
-          <table class="contacts__data">
-            <tr class="contacts__data-row">
-              <td class="contacts__data-cell">e-mail:</td>
-              <td class="contacts__data-cell">info@mimimishkashop.ru</td>
-            </tr>
-            <tr class="contacts__data-row">
-              <td class="contacts__data-cell">адрес:</td>
-              <td class="contacts__data-cell">Санкт-Петербург,
-                  ул. Большая Конюшенная,
-                  д. 19/8, офис 101</td>
-            </tr>
-          </table>
+        <address class="contacts__info">
+          <p class="contacts__data-cell contacts__data-cell--description">e-mail:</p>
+          <p class="contacts__data-cell contacts__data-cell--address contacts__data-cell--underline">info@mimimishkashop.ru</p>
+          <p class="contacts__data-cell contacts__data-cell--description">адрес:</p>
+          <p class="contacts__data-cell contacts__data-cell--address">Санкт-Петербург,
+            ул. Большая Конюшенная,
+            д. 19/8, офис 101</p>
         </address>
-        <a class="contacts__link-map" href="https://www.google.ru/maps/@57.1536402,65.5048321,13z">
-          <img class="contacts__image-map" src="http://placehold.it/320x457" width="320" height="457" alt="Санкт-Петербург,
+        <img class="contacts__image-map" src="http://placehold.it/320x457" width="320" height="457" alt="Санкт-Петербург,
           ул. Большая Конюшенная,
           д. 19/8, офис 101">
-        </a>
         <a class="button contacts__button contacts__button--write" href="feedback.html">Напишите нам</a>
       </section>
     </main>
@@ -127,16 +119,26 @@
       </p>
     </footer>
     <section class="modal modal-cart">
-      <header class="modal-cart__header">
-        <h2 class="modal-cart__title">Добавить в корзину</h2>
-      </header>
-      <p class="modal-cart__description">Выберите размер:</p>
-      <ul class="modal-cart__list">
-        <li class="modal-cart__item"><a class="modal-cart__link" href="cart.html">S</a></li>
-        <li class="modal-cart__item"><a class="modal-cart__link" href="cart.html">M</a></li>
-        <li class="modal-cart__item"><a class="modal-cart__link" href="cart.html">L</a></li>
-      </ul>
-      <a class="button modal-cart__button modal-cart__button--add" href="cart.html">Добавить</a>
+      <form class="modal-form modal-cart__form"  method="get" action="https://echo.htmlacademy.ru">
+        <header class="modal-cart__header">
+          <h2 class="modal-cart__title">Добавить в корзину</h2>
+        </header>
+        <p class="modal-cart__description">Выберите размер:</p>
+        <ul class="modal-cart__list">
+          <li class="modal-cart__item">
+            <input class="modal-cart__input" type="radio" name="size" value="size-s" id="size-s" checked>
+            <label class="modal-cart__label" for="size-s">S</label></li>
+          <li class="modal-cart__item">
+            <input class="modal-cart__input" type="radio" name="size" value="size-m" id="size-m">
+            <label class="modal-cart__label" for="size-m">M</label>
+          </li>
+          <li class="modal-cart__item">
+            <input class="modal-cart__input" type="radio" name="size" value="size-l" id="size-l">
+            <label class="modal-cart__label" for="size-l">L</label>
+          </li>
+        </ul>
+        <button class="button modal-cart__button modal-cart__button--add">Добавить</button>
+      </form>
     </section>
   </body>
 </html>
