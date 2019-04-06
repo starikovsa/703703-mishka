@@ -84,6 +84,23 @@
           <a class="button reviews__button reviews__button--write" href="order.html">Написать</a>
         </footer>
       </section>
+      <section class="contacts">
+        <header class="contacts__header">
+          <h2 class="contacts__title">Контакты</h2>
+        </header>
+        <address class="contacts__info">
+          <p class="contacts__data-cell contacts__data-cell--description">e-mail:</p>
+          <p class="contacts__data-cell contacts__data-cell--address contacts__data-cell--underline">info@mimimishkashop.ru</p>
+          <p class="contacts__data-cell contacts__data-cell--description">адрес:</p>
+          <p class="contacts__data-cell contacts__data-cell--address">Санкт-Петербург,
+            ул. Большая Конюшенная,
+            д. 19/8, офис 101</p>
+        </address>
+        <img class="contacts__image-map" src="http://placehold.it/320x457" width="320" height="457" alt="Санкт-Петербург,
+          ул. Большая Конюшенная,
+          д. 19/8, офис 101">
+        <a class="button contacts__button contacts__button--write" href="feedback.html">Напишите нам</a>
+      </section>
     </main>
     <footer class="main-footer">
       <ul class="main-footer__social-list">
@@ -101,5 +118,27 @@
         <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="vissually-hidden">htmlacademy</span></a>
       </p>
     </footer>
+    <section class="modal modal-cart">
+      <form class="modal-form modal-cart__form"  method="get" action="https://echo.htmlacademy.ru">
+        <header class="modal-cart__header">
+          <h2 class="modal-cart__title">Добавить в корзину</h2>
+        </header>
+        <p class="modal-cart__description">Выберите размер:</p>
+        <ul class="modal-cart__list">
+          <li class="modal-cart__item">
+            <input class="modal-cart__input" type="radio" name="size" value="size-s" id="size-s" checked>
+            <label class="modal-cart__label" for="size-s">S</label></li>
+          <li class="modal-cart__item">
+            <input class="modal-cart__input" type="radio" name="size" value="size-m" id="size-m">
+            <label class="modal-cart__label" for="size-m">M</label>
+          </li>
+          <li class="modal-cart__item">
+            <input class="modal-cart__input" type="radio" name="size" value="size-l" id="size-l">
+            <label class="modal-cart__label" for="size-l">L</label>
+          </li>
+        </ul>
+        <button class="button modal-cart__button modal-cart__button--add">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>

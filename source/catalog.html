@@ -25,7 +25,7 @@
         </header>
           <ul class="catalog__list">
             <li class="catalog__item">
-              <article class="card">
+              <article class="card catalog__card">
                 <img class="card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
                 <h3 class="card__title">Зайчик-попрыгайчик</h3>
                 <p class="card__description">Рост 30 см, вес 200 г</p>
@@ -34,7 +34,7 @@
               </article>
             </li>
             <li class="catalog__item">
-              <article class="card">
+              <article class="card catalog__card">
                 <img class="card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
                 <h3 class="card__title">Корзинка для белья</h3>
                 <p class="card__description">Корзинка для белья</p>
@@ -43,7 +43,7 @@
               </article>
             </li>
             <li class="catalog__item">
-              <article class="card">
+              <article class="card catalog__card">
                 <img class="card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка
                 для игрушек">
                 <h3 class="card__title">Большая корзинка
@@ -54,6 +54,15 @@
                 </article>
             </li>
           </ul>
+      </section>
+      <section class="process">
+        <header class="process__header">
+          <h2 class="process__title process__title--camera">Процесс производства</h2>
+        </header>
+        <img class="process__image process__image--video" src="http://placehold.it/260x150" width="260" height="150" alt="Процесс производства">
+        <a class="button process__button process__button--play" href="video.html"><span class="vissually-hidden">Посмотреть видео</span></a>
+        <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="button process__button process__button--add" href="cart.html">Сделать заказ</a>
       </section>
     </main>
     <footer class="main-footer">
@@ -72,5 +81,27 @@
         <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="vissually-hidden">htmlacademy</span></a>
       </p>
     </footer>
+    <section class="modal modal-cart">
+      <form class="modal-form modal-cart__form"  method="get" action="https://echo.htmlacademy.ru">
+        <header class="modal-cart__header">
+          <h2 class="modal-cart__title">Добавить в корзину</h2>
+        </header>
+        <p class="modal-cart__description">Выберите размер:</p>
+        <ul class="modal-cart__list">
+          <li class="modal-cart__item">
+            <input class="modal-cart__input" type="radio" name="size" value="size-s" id="size-s" checked>
+            <label class="modal-cart__label" for="size-s">S</label></li>
+          <li class="modal-cart__item">
+            <input class="modal-cart__input" type="radio" name="size" value="size-m" id="size-m">
+            <label class="modal-cart__label" for="size-m">M</label>
+          </li>
+          <li class="modal-cart__item">
+            <input class="modal-cart__input" type="radio" name="size" value="size-l" id="size-l">
+            <label class="modal-cart__label" for="size-l">L</label>
+          </li>
+        </ul>
+        <button class="button modal-cart__button modal-cart__button--add">Добавить</button>
+      </form>
+      </section>
   </body>
 </html>
