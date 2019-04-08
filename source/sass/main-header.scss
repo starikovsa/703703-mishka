@@ -1,5 +1,7 @@
 .main-header {
-  margin-bottom: 30px;
+  &--index {
+    margin-bottom: 30px;
+  }
 }
 
 .main-header__logo {
