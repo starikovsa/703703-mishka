@@ -1,4 +1,49 @@
+.process {
+  margin-bottom: 55px;
+}
+
 .process__title {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
   margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
+}
+
+.process__image {
+  margin-bottom: 30px;
+}
+
+.process__button {
+  &--play {
+    display: inline-block;
+    width: 101px;
+    height: 77px;
+    background: {
+      image: url("../../../img/icon-play.svg");
+      repeat: no-repeat;
+    }
+  }
+
+  &--add {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.18;
+    text-transform: uppercase;
+    color: #000000;
+    border: solid 2px #000000;
+    padding: 15px 26px;
+  }
+}
+
+.process__description {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.85;
+  margin: 0;
+  margin-bottom: 25px;
   padding: 0;
 }

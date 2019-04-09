@@ -1,4 +1,21 @@
-.form__block {
+.form-block {
+  margin-bottom: 55px;
+}
+
+.form-block__title {
+  font-size: 27px;
+  font-weight: bold;
   margin: 0;
+  margin-bottom: 30px;
+  padding: 75px 40px;
+  background-color: #ececec;
+}
+
+.form-block__discription {
+  font-size: 13px;
+  line-height: 1.85;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 25px;
   padding: 0;
 }
