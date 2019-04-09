@@ -1,0 +1,68 @@
+.main-header {
+  &--index {
+    margin-bottom: 30px;
+  }
+}
+
+.main-header__logo {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-navigation__link {
+  text-decoration: none;
+  font-size: 17px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 1.41;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-header__content {
+  background-color: #f9f9f9;
+  padding: 70px 35px 120px;
+  background: {
+    image: url("../img/hero-mobile@1x.jpg");
+    repeat: no-repeat;
+  }
+}
+
+.main-header__title {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.11;
+}
+
+.main-header__features-item {
+  &--interior {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+}
+
+.main-header__features-link {
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+  color: #ffffff;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

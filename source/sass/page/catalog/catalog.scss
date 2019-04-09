@@ -1,0 +1,49 @@
+.catalog__title {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 75px 40px;
+  background-color: #ececec;
+}
+
+.card__image {
+  margin-bottom: 28px;
+}
+
+.card__title {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.card__description {
+  font-size: 13px;
+  line-height: 2.31;
+  margin: 0;
+  padding: 0;
+}
+
+.card__price {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.card__button {
+  & path {
+    fill-opacity: 0.2;
+  }
+
+  &:hover path {
+    fill: #63d1bb;
+    fill-opacity: 1;
+  }
+
+  &:active path {
+    fill-opacity: 0.3;
+  }
+}

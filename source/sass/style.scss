@@ -1,0 +1,20 @@
+// Подключение normalize
+@import "base/normalize.scss";
+
+// Подключение базовых стилей
+@import "base/base.scss";
+@import "base/font.scss";
+
+// Блоки главной страницы
+@import "main-header.scss";
+@import "promo.scss";
+@import "about-us.scss";
+@import "reviews.scss";
+@import "contacts.scss";
+@import "main-footer.scss";
+
+// Блоки каталога и и формы
+@import "page/catalog/catalog.scss";
+@import "page/catalog/process.scss";
+@import "page/form/form-block.scss";
+@import "page/form/form.scss";
