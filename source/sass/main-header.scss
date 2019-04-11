@@ -1,10 +1,19 @@
 .main-header {
+  width: 320px;
+  margin: 0 auto;
+
   &--index {
     margin-bottom: 30px;
   }
 }
 
 .main-header__logo {
+  display: inline-block;
+  min-height: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 116px;
+
   &:hover {
     opacity: 0.6;
   }
@@ -14,12 +23,32 @@
   }
 }
 
+.main-navigation__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-navigation__item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 76px;
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+
+  &--dellivery {
+    display: none;
+  }
+}
+
 .main-navigation__link {
   text-decoration: none;
   font-size: 17px;
   color: #000000;
   font-weight: bold;
   line-height: 1.41;
+
+  &--search {
+    display: none;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -32,10 +61,10 @@
 
 .main-header__content {
   background-color: #f9f9f9;
-  padding: 70px 35px 120px;
   background: {
     image: url("../img/hero-mobile@1x.jpg");
     repeat: no-repeat;
+    position: center;
   }
 }
 
@@ -43,9 +72,16 @@
   font-size: 27px;
   font-weight: bold;
   line-height: 1.11;
+  padding-top: 70px;
+  padding-bottom: 120px;
+  padding-left: 35px;
 }
 
 .main-header__features-item {
+  width: 105px;
+  padding: 30px;
+  padding-right: 185px;
+
   &--interior {
     background-color: #63d1bb;
   }
@@ -64,5 +100,69 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    width: auto;
+  }
+
+  .main-header__wrapper {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .main-header__logo {
+    padding-left: 0;
+  }
+
+  .main-navigation__list {
+    margin: 0 auto;
+    padding: 0 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .main-navigation__item {
+    box-shadow: none;
+
+    &--dellivery {
+      display: inline-block;
+    }
+  }
+
+  .main-header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 746px;
+
+    background: {
+      image: url("../img/hero-tablet@1x.jpg");
+      repeat: no-repeat;
+      position: center;
+    }
+  }
+
+  .main-header__title {
+    width: 494px;
+    font-size: 43px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 260px;
+  }
+
+  .main-header__features-list {
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .main-header__features-item {
+    width: 113px;
+    padding: 36px;
+    padding-right: 185px;
   }
 }
