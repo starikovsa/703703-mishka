@@ -80,3 +80,39 @@
     color: rgba(255, 255, 255, 0.3);
   }
 }
+
+@media (min-width: 768px) {
+  .promo {
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 125px;
+  }
+
+  .promo__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .promo__title {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .promo__product-offer {
+    width: 70px;
+    text-align: center;
+    padding-top: 5px;
+    padding-right: 25px;
+  }
+
+  .promo__container {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+  }
+
+  .promo__image {
+    position: absolute;
+    left: 435px;
+  }
+}
