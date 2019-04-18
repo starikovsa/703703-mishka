@@ -119,3 +119,30 @@
     width: 130px;
   }
 }
+
+@media (min-width: 1150px) {
+  .catalog {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .catalog__list {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .catalog__item {
+    margin-right: 50px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  .catalog__card {
+    width: 314px;
+    flex-direction: column;
+  }
+}
