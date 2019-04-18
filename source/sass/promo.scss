@@ -116,3 +116,31 @@
     left: 435px;
   }
 }
+
+@media (min-width: 1150px) {
+  .promo {
+    display: flex;
+    width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 160px;
+    flex-direction: column;
+  }
+
+  .promo__header {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-left: 45px;
+    z-index: 2;
+  }
+
+  .promo__title {
+    font-size: 53px;
+    line-height: 1.08;
+    margin-left: 35px;
+  }
+
+  .promo__container {
+    margin-left: 175px;
+    position: relative;
+  }
+}
