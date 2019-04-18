@@ -70,3 +70,19 @@
     }
   }
 }
+
+@media (min-width: 1150px) {
+  .about-us {
+    width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 165px;
+  }
+
+  .about-us__header {
+    margin-left: 175px;
+  }
+
+  .about-us__list {
+    margin-left: 175px;
+  }
+}
