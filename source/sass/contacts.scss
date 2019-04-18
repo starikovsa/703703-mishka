@@ -28,7 +28,16 @@
   font-weight: bold;
   line-height: 1.18;
   text-transform: uppercase;
-  color: #000000;
-  border: solid 2px #000000;
+  color: #444444;
+  border: solid 2px #444444;
   padding: 15px 50px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

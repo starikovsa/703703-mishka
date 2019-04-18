@@ -1,4 +1,11 @@
 .catalog {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.catalog__header {
+  background-color: #ececec;
   margin-bottom: 30px;
 }
 
@@ -6,9 +13,23 @@
   font-size: 27px;
   font-weight: bold;
   margin: 0;
-  margin-bottom: 30px;
   padding: 75px 40px;
-  background-color: #ececec;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+}
+
+.catalog__card {
+  padding-bottom: 25px;
+  border: solid 1px #ececec;
 }
 
 .card__image {
@@ -22,19 +43,33 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
+  padding-left: 25px;
 }
 
 .card__description {
+  width: 204px;
   font-size: 13px;
   line-height: 2.31;
-  margin: 0;
+  border-bottom: solid 1px #ececec;
+  margin: 0 auto;
+  margin-bottom: 22px;
   padding: 0;
+  padding-bottom: 15px;
+}
+
+.card__price-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .card__price {
   font-size: 15px;
   font-weight: bold;
   line-height: 1.6;
+  margin: 0;
 }
 
 .card__button {
@@ -49,5 +84,65 @@
 
   &:active path {
     fill-opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    width: 768px;
+  }
+
+  .catalog__header {
+    margin-top: -30px;
+    margin-bottom: 80px;
+  }
+
+  .catalog__title {
+    font-size: 43px;
+    line-height: 1.16;
+    text-align: center;
+  }
+
+  .catalog__card {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card__title {
+    margin-top: 25px;
+    margin-right: 80px;
+  }
+
+  .card__description {
+    width: 130px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .catalog__list {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .catalog__item {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .catalog__card {
+    width: 314px;
+    flex-direction: column;
   }
 }

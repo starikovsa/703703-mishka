@@ -1,4 +1,6 @@
 .about-us {
+  width: 260px;
+  margin: 0 auto;
   margin-bottom: 55px;
 }
 
@@ -15,4 +17,72 @@
   font-weight: bold;
   line-height: 1.18;
   padding-top: 85px;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    margin-right: 100px;
+
+    &--flower {
+      width: 230px;
+      order: 1;
+    }
+
+    &--price {
+      width: 235px;
+      order: 3;
+    }
+
+    &--heart {
+      width: 230px;
+      order: 5;
+    }
+
+    &--clew {
+      width: 230px;
+      order: 2;
+    }
+
+    &--rocket {
+      width: 230px;
+      order: 4;
+    }
+
+    &--gift {
+      width: 230px;
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us {
+    width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 165px;
+  }
+
+  .about-us__header {
+    margin-left: 175px;
+  }
+
+  .about-us__list {
+    margin-left: 175px;
+  }
 }
