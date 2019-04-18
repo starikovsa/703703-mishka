@@ -83,3 +83,21 @@
     margin: 0;
   }
 }
+
+@media (min-width: 1150px) {
+  .main-footer {
+    width: 1050px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 54px;
+  }
+
+  .main-footer__logo {
+    margin-right: 340px;
+  }
+
+  .main-footer__social-list {
+    margin: 0;
+    margin-right: 270px;
+  }
+}
