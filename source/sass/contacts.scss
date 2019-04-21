@@ -1,4 +1,6 @@
 .contacts {
+  width: 260px;
+  margin: 0 auto;
   margin-bottom: 39px;
 }
 
@@ -19,6 +21,10 @@
   &--underline {
     border-bottom: 2px solid #56c3b2;
   }
+}
+
+.contacts__image-map {
+  margin-left: -30px;
 }
 
 .contacts__button {
