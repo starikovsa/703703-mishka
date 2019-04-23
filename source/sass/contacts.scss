@@ -96,11 +96,11 @@
     line-height: 1.76;
 
     &--address {
-      width: 200px;
+      width: 220px;
     }
 
     &--underline {
-      margin-right: 55px;
+      margin-right: 35px;
     }
   }
 
@@ -114,5 +114,28 @@
   .contacts {
     width: 1050px;
     margin: 0 auto;
+    margin-bottom: 105px;
+    position: relative;
+  }
+
+  .contacts__header {
+    padding-left: 170px;
+  }
+
+  .contacts__info {
+    width: 350px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    padding-left: 170px;
+  }
+
+  .contacts__image-map {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .contacts__button {
+    margin-left: 170px;
   }
 }
