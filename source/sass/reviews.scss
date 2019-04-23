@@ -22,6 +22,7 @@
 }
 
 .reviews__author-name {
+  width: 240px;
   font-size: 17px;
   font-weight: bold;
   margin: 0;
@@ -159,5 +160,37 @@
     top: -188px;
     right: 0;
     padding: 14px 40px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .reviews {
+    width: 1050px;
+    margin: 0 auto;
+    flex-direction: column;
+    background-position-x: 50px;
+  }
+
+  .reviews__header {
+    margin-left: 172px;
+    margin-bottom: 50px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
+  .reviews__container {
+    margin-left: 172px;
+  }
+
+  .reviews__text {
+    width: 800px;
+    margin-bottom: 45px;
+  }
+
+  .reviews__button {
+    top: -260px;
   }
 }
