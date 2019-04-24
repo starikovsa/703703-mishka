@@ -123,3 +123,33 @@
     order: 3;
   }
 }
+
+@media (min-width: 1150px) {
+  .process {
+    width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 105px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .process__header {
+    width: 230px;
+    padding: 0;
+  }
+
+  .process__description {
+    width: 230px;
+  }
+
+  .process__button {
+    &--play {
+      top: 25%;
+      left: 25%;
+    }
+
+    &--add {
+      width: 144px;
+    }
+  }
+}
