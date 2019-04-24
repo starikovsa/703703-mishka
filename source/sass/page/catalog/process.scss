@@ -64,11 +64,62 @@
 }
 
 .process__description {
+  width: 184px;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.85;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 25px;
   padding: 0;
-  padding-left: 34px;
+}
+
+@media (min-width: 768px) {
+  .process {
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    padding-bottom: 44px;
+  }
+
+  .process__header {
+    order: 2;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 35px;
+  }
+
+  .process__title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .process__image {
+    order: 1;
+  }
+
+  .process__button {
+    &--play {
+      top: 15%;
+      left: 40%;
+    }
+
+    &--add {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 15px 41px;
+      order: 4;
+    }
+  }
+
+  .process__description {
+    width: 582px;
+    font-size: 15px;
+    line-height: 2;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    order: 3;
+  }
 }
