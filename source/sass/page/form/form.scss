@@ -255,3 +255,30 @@
     margin-right: 165px;
   }
 }
+
+@media (min-width: 1150px) {
+  .form {
+    width: 1050px;
+  }
+
+  .contact__row {
+    width: 700px;
+  }
+
+  .contact__title-phone {
+    width: 50px;
+  }
+
+  .contact__title-email {
+    width: 70px;
+  }
+
+  .form__note {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .form__button {
+    margin-right: 330px;
+  }
+}
