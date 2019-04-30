@@ -1,3 +1,8 @@
+.form {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .form__type {
   margin-bottom: 30px;
   padding: 0;
@@ -40,6 +45,11 @@
   text-transform: uppercase;
 }
 
+.color__row {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 .color__label {
   font-size: 17px;
   font-weight: bold;
@@ -61,6 +71,11 @@
   text-transform: uppercase;
 }
 
+.introduce__row {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .introduce__label {
   font-size: 17px;
   font-weight: bold;
@@ -70,6 +85,10 @@
 .introduce__input {
   border: none;
   box-shadow: inset 0 -2px 0 0 #000000;
+}
+
+.form__contact {
+  padding: 0;
 }
 
 .contact__title-phone {
@@ -107,8 +126,15 @@
   text-transform: uppercase;
 }
 
+.form__additionally {
+  padding: 0;
+}
+
 .additionally__textform {
+  width: 220px;
+  min-height: 102px;
   border: solid 2px #444444;
+  padding: 18px;
 }
 
 .form__note {
@@ -134,5 +160,125 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    width: 668px;
+  }
+
+  .form__wrapper {
+    display: flex;
+  }
+
+  .type__title {
+    margin-right: 130px;
+  }
+
+  .type__row {
+    margin-bottom: 30px;
+  }
+
+  .type__label {
+    font-size: 19px;
+    line-height: 0.95;
+  }
+
+  .color__title {
+    margin-right: 130px;
+  }
+
+  .form__controls-color {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .color__row {
+    width: 210px;
+    margin-bottom: 30px;
+  }
+
+  .color__label {
+    font-size: 19px;
+    line-height: 0.95;
+  }
+
+  .introduce__title {
+    margin-right: 130px;
+  }
+
+  .form__contact {
+    margin-bottom: 50px;
+  }
+
+  .form__wrapper-contact {
+    flex-wrap: wrap;
+  }
+
+  .contact__title-phone {
+    margin-right: 130px;
+  }
+
+  .contact__title-email {
+    margin-right: 105px;
+  }
+
+  .contact__row {
+    width: 500px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .form__additionally {
+    margin-bottom: 45px;
+  }
+
+  .additionally__title {
+    margin-right: 130px;
+  }
+
+  .additionally__row {
+    margin: 0;
+  }
+
+  .additionally__textform {
+    width: 460px;
+  }
+
+  .form__footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .form__button {
+    margin-right: 165px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .form {
+    width: 1050px;
+  }
+
+  .contact__row {
+    width: 700px;
+  }
+
+  .contact__title-phone {
+    width: 50px;
+  }
+
+  .contact__title-email {
+    width: 70px;
+  }
+
+  .form__note {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .form__button {
+    margin-right: 330px;
   }
 }
