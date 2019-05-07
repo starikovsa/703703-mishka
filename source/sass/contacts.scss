@@ -81,9 +81,21 @@
   }
 
   .contacts__title {
+    position: relative;
     font-size: 43px;
     line-height: 1.16;
     margin-bottom: 50px;
+  }
+
+  .contacts__title::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    right: 15px;
+    width: 47px;
+    height: 81px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
   }
 
   .contacts__info {

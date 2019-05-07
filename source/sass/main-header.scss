@@ -8,22 +8,6 @@
   }
 }
 
-.main-header__logo {
-  display: block;
-  min-height: 35px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 116px;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
 .main-navigation__list {
   display: flex;
   flex-direction: column;
@@ -34,6 +18,10 @@
   padding-bottom: 30px;
   padding-left: 76px;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+
+  &--logo {
+    padding-left: 116px;
+  }
 
   &--new {
     display: none;
@@ -72,7 +60,7 @@
   content: "";
   position: absolute;
   top: 31px;
-  left: 32px;
+  left: 50px;
   width: 21px;
   height: 19px;
   background-image: url("../img/icon-cart.svg");
@@ -86,6 +74,18 @@
   color: #000000;
   font-weight: bold;
   line-height: 1.41;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-navigation__link--logo {
+  display: block;
 
   &:hover {
     opacity: 0.6;
@@ -181,60 +181,74 @@
     margin: 0 auto;
   }
 
-  .main-header__logo {
-    position: absolute;
-    padding-bottom: 0;
-    padding-left: 50px;
-  }
-
-  .main-header__navigation {
-    padding: 0 50px;
-  }
-
   .main-navigation__list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .main-navigation__item {
     box-shadow: none;
     padding: 0;
-    padding-top: 20px;
+
+    &--logo {
+      padding-top: 22px;
+      padding-right: 209px;
+      padding-left: 50px;
+      border-bottom: 1px solid #ececec;
+    }
 
     &--catalog {
       margin-right: 35px;
+      padding-top: 18px;
+      padding-left: 50px;
       order: 3;
     }
 
     &--order {
       margin-right: 105px;
+      padding-top: 18px;
       order: 4;
     }
 
     &--search {
-      width: 82px;
       border: 1px solid #ececec;
       border-top: none;
-      border-bottom: none;
-      margin-left: 321px;
-      padding-top: 10px;
       order: 1;
     }
 
     &--cart {
-      padding-left: 90px;
+      padding-top: 31px;
+      padding-bottom: 33px;
+      padding-left: 120px;
+      padding-right: 50px;
+      border-bottom: 1px solid #ececec;
       order: 2;
     }
 
     &--dellivery {
       display: inline-block;
+      padding-top: 18px;
       order: 5;
     }
+  }
+
+  .main-navigation__item--search::before {
+    display: none;
+  }
+
+  .main-navigation__link--search {
+    display: block;
+    padding-top: 36px;
+    padding-right: 31px;
+    padding-bottom: 34px;
+    padding-left: 33px;
   }
 
   .main-navigation__icon {
     display: block;
     margin: 0 auto;
+    opacity: 0.2;
   }
 
   .main-navigation__hidden {
@@ -259,7 +273,7 @@
     flex-direction: column;
     justify-content: flex-end;
     min-height: 746px;
-    margin-top: -30px;
+    margin-top: -43px;
 
     background: {
       image: url("../img/hero-tablet@1x.jpg");
@@ -299,29 +313,42 @@
     margin: 0 auto;
   }
 
-  .main-header__logo {
-    left: 45%;
-  }
-
   .main-navigation__item {
     box-shadow: none;
 
     &--catalog {
+      margin: 0;
+      padding-top: 30px;
+      padding-right: 40px;
+      border-bottom: 1px solid #ececec;
       order: 1;
     }
 
     &--order {
+      margin: 0;
+      padding-top: 30px;
+      padding-right: 34px;
+      padding-left: 35px;
+      border: 1px solid #ececec;
+      border-top: none;
+      border-right: none;
       order: 2;
     }
 
-    &--search {
-      margin-left: 250px;
+    &--logo {
+      padding-top: 10px;
+      padding-right: 100px;
       order: 3;
     }
 
-    &--cart {
-      padding-left: 80px;
+    &--search {
       order: 4;
+    }
+
+    &--cart {
+      padding-left: 73px;
+      padding-right: 50px;
+      order: 5;
     }
 
     &--new {
@@ -329,21 +356,31 @@
       font-size: 15px;
       line-height: 1.6;
       margin-right: 55px;
-      order: 5;
+      padding-top: 18px;
+      padding-left: 50px;
+      order: 6;
     }
 
     &--sales {
       display: inline-block;
       font-size: 15px;
       line-height: 1.6;
-      margin-right: 440px;
-      order: 6;
+      margin-right: 390px;
+      padding-top: 18px;
+      order: 7;
     }
 
     &--dellivery {
       display: inline-block;
-      order: 7;
+      padding-right: 50px;
+      order: 8;
     }
+  }
+
+  .main-navigation__item--cart::before {
+    content: "";
+    top: 31px;
+    left: 25px;
   }
 
   .main-header__title {
