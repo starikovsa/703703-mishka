@@ -32,6 +32,7 @@
   margin: 0;
   margin-bottom: 27px;
   padding: 0;
+  color: #444444;
 }
 
 .promo__specifications {
@@ -142,5 +143,15 @@
   .promo__container {
     margin-left: 175px;
     position: relative;
+  }
+
+  .promo__description {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .promo__price {
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
