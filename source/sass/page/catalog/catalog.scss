@@ -19,7 +19,6 @@
 .catalog__list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 0 30px;
 }
 
@@ -27,13 +26,20 @@
   margin-bottom: 30px;
 }
 
-.catalog__card {
-  padding-bottom: 25px;
-  border: solid 1px #ececec;
+.card__link {
+  display: block;
+  line-height: 0;
 }
 
-.card__image {
-  margin-bottom: 28px;
+.card__wrapper {
+  border: solid 1px #ececec;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__description-wrapper {
+  width: 205px;
+  margin: 0 auto;
 }
 
 .card__title {
@@ -41,28 +47,28 @@
   font-weight: bold;
   line-height: 1.41;
   margin: 0;
-  margin-bottom: 10px;
   padding: 0;
-  padding-left: 25px;
+  padding-top: 26px;
+  padding-bottom: 5px;
 }
 
 .card__description {
-  width: 204px;
   font-size: 13px;
   line-height: 2.31;
-  border-bottom: solid 1px #ececec;
-  margin: 0 auto;
-  margin-bottom: 22px;
+  margin: 0;
   padding: 0;
-  padding-bottom: 15px;
+  padding-bottom: 19px;
 }
 
 .card__price-wrapper {
+  width: 205px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-right: 25px;
-  padding-left: 25px;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 26px;
+  border-top: solid 1px #ececec;
 }
 
 .card__price {
@@ -98,7 +104,7 @@
   }
 
   .catalog__header {
-    margin-top: -30px;
+    margin-top: -42px;
     margin-bottom: 80px;
   }
 
@@ -109,19 +115,44 @@
   }
 
   .catalog__card {
-    width: 668px;
+    width: 667px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+  }
+
+  .card__link {
+    width: 334px;
+    height: 334px; //временно для разметки
+  }
+
+  .card__wrapper {
+    width: 312px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 21px;
+  }
+
+  .card__description-wrapper {
+    margin: 0;
+    margin-bottom: 170px;
+    padding: 0;
   }
 
   .card__title {
-    margin-top: 25px;
-    margin-right: 80px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 
   .card__description {
-    width: 130px;
+    padding: 0;
+  }
+
+  .card__price-wrapper {
+    width: 265px;
+    margin: 0;
+    padding: 0;
+    padding-top: 22px;
+    padding-bottom: 26px;
   }
 }
 
@@ -147,7 +178,25 @@
   }
 
   .catalog__card {
-    width: 314px;
+    width: 316px;
     flex-direction: column;
+  }
+
+  .card__link {
+    width: 316px;
+  }
+
+  .card__wrapper {
+    width: 232px;
+    padding: 0 41px;
+  }
+
+  .card__description-wrapper {
+    width: 232px;
+    margin-bottom: 37px;
+  }
+
+  .card__price-wrapper {
+    width: 232px;
   }
 }

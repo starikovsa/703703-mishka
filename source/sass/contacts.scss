@@ -150,4 +150,19 @@
   .contacts__button {
     margin-left: 170px;
   }
+
+  .contacts__title::after {
+    display: none;
+  }
+
+  .contacts__title::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -100px;
+    width: 47px;
+    height: 81px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+  }
 }
