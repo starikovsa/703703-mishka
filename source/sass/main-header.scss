@@ -36,6 +36,11 @@
   }
 }
 
+.logo__image {
+  width: 86px;
+  height: 35px;
+}
+
 .main-navigation__item--search {
   position: relative;
 }
@@ -60,7 +65,7 @@
   content: "";
   position: absolute;
   top: 31px;
-  left: 50px;
+  left: 30px;
   width: 21px;
   height: 19px;
   background-image: url("../img/icon-cart.svg");
@@ -102,18 +107,23 @@
 
 .main-header__content {
   background-color: #f9f9f9;
-  background: {
-    image: url("../img/hero-mobile@1x.jpg");
-    repeat: no-repeat;
-    position: center;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -18px;
+  background-size: 575px 373px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
 
 .main-header__title {
+  text-align: center;
   font-size: 27px;
   font-weight: bold;
   line-height: 1.11;
   padding-top: 70px;
+  padding-right: 35px;
   padding-bottom: 120px;
   padding-left: 35px;
 }
@@ -193,7 +203,7 @@
 
     &--logo {
       padding-top: 22px;
-      padding-right: 209px;
+      padding-right: 200px;
       padding-left: 50px;
       border-bottom: 1px solid #ececec;
     }
@@ -220,7 +230,7 @@
     &--cart {
       padding-top: 31px;
       padding-bottom: 33px;
-      padding-left: 120px;
+      padding-left: 103px;
       padding-right: 50px;
       border-bottom: 1px solid #ececec;
       order: 2;
@@ -231,6 +241,11 @@
       padding-top: 18px;
       order: 5;
     }
+  }
+
+  .logo__image {
+    width: 112px;
+    height: 46px;
   }
 
   .main-navigation__item--search::before {
@@ -309,7 +324,6 @@
   }
 
   .main-navigation__list {
-    width: 1050px;
     margin: 0 auto;
   }
 
@@ -320,6 +334,7 @@
       margin: 0;
       padding-top: 30px;
       padding-right: 40px;
+      padding-left: 0;
       border-bottom: 1px solid #ececec;
       order: 1;
     }
@@ -337,7 +352,7 @@
 
     &--logo {
       padding-top: 10px;
-      padding-right: 100px;
+      padding-right: 87px;
       order: 3;
     }
 
@@ -375,6 +390,11 @@
       padding-right: 50px;
       order: 8;
     }
+  }
+
+  .logo__image {
+    width: 149px;
+    height: 72px;
   }
 
   .main-navigation__item--cart::before {
