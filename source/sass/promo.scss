@@ -84,6 +84,7 @@
 
 @media (min-width: 768px) {
   .promo {
+    position: relative;
     width: 668px;
     margin: 0 auto;
     margin-bottom: 125px;
@@ -112,9 +113,17 @@
     width: 290px;
   }
 
+  .promo__specifications {
+    margin-bottom: 60px;
+  }
+
   .promo__image {
     position: absolute;
-    left: 435px;
+    width: 333px;
+    height: 404px;
+    top: 79px;
+    right: 0;
+    z-index: -1;
   }
 }
 
@@ -131,6 +140,7 @@
     justify-content: flex-end;
     flex-direction: row-reverse;
     margin-left: 45px;
+    padding-top: 60px;
     z-index: 2;
   }
 
@@ -142,7 +152,10 @@
 
   .promo__container {
     margin-left: 175px;
-    position: relative;
+  }
+
+  .promo__specifications {
+    margin-bottom: 110px;
   }
 
   .promo__description {
@@ -153,5 +166,13 @@
   .promo__price {
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  .promo__image {
+    position: absolute;
+    width: 525px;
+    height: 636px;
+    top: 0;
+    right: 0;
   }
 }

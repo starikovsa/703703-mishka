@@ -1,6 +1,7 @@
-.catalog {
-  width: 320px;
+.catalog__list {
+  width: 260px;
   margin: 0 auto;
+  padding-top: 7px;
   margin-bottom: 30px;
 }
 
@@ -16,12 +17,6 @@
   padding: 75px 40px;
 }
 
-.catalog__list {
-  display: flex;
-  flex-direction: column;
-  padding: 0 30px;
-}
-
 .catalog__item {
   margin-bottom: 30px;
 }
@@ -33,14 +28,19 @@
 
 .card__wrapper {
   border: solid 1px #ececec;
-  flex-direction: column;
-  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
-.card__description-wrapper {
-  width: 205px;
-  margin: 0 auto;
-}
 
 .card__title {
   font-size: 17px;
@@ -61,9 +61,8 @@
 }
 
 .card__price-wrapper {
-  width: 205px;
+  width: 204px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 22px;
@@ -94,13 +93,12 @@
 }
 
 @media (min-width: 768px) {
-  .catalog {
-    width: 768px;
+  .catalog__list {
+    width: 668px;
   }
 
   .catalog__item {
     margin: 0 auto;
-    margin-bottom: 50px;
   }
 
   .catalog__header {
@@ -115,27 +113,21 @@
   }
 
   .catalog__card {
-    width: 667px;
     display: flex;
-    flex-direction: row;
+    margin-bottom: 52px;
+    flex-grow: 0;
   }
 
-  .card__link {
+  .card__image {
     width: 334px;
-    height: 334px; //временно для разметки
+    height: 334px;
   }
 
   .card__wrapper {
-    width: 312px;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-left: 21px;
-  }
-
-  .card__description-wrapper {
-    margin: 0;
-    margin-bottom: 170px;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 26px;
   }
 
   .card__title {
@@ -148,28 +140,25 @@
   }
 
   .card__price-wrapper {
-    width: 265px;
-    margin: 0;
+    width: 268px;
     padding: 0;
+    margin-top: auto;
     padding-top: 22px;
-    padding-bottom: 26px;
+    padding-bottom: 28px;
+    padding-left: 4px;
   }
 }
 
 @media (min-width: 1150px) {
-  .catalog {
-    width: 1050px;
-    margin: 0 auto;
-  }
-
   .catalog__list {
-    flex-direction: row;
-    justify-content: flex-start;
+    width: 1050px;
+    display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    justify-content: space-between;
   }
 
   .catalog__item {
+    display: flex;
     margin-right: 50px;
 
     &:last-child {
@@ -179,24 +168,40 @@
 
   .catalog__card {
     width: 316px;
+    display: flex;
     flex-direction: column;
+    margin-bottom: 55px;
   }
 
-  .card__link {
+  .card__image {
     width: 316px;
+    height: 462px;
   }
 
   .card__wrapper {
-    width: 232px;
-    padding: 0 41px;
+    flex-grow: 1;
   }
 
-  .card__description-wrapper {
-    width: 232px;
-    margin-bottom: 37px;
+  .card__title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .card__description {
+    font-size: 15px;
+    line-height: 2;
   }
 
   .card__price-wrapper {
-    width: 232px;
+    width: 256px;
+    padding-top: 18px;
+    padding-bottom: 27px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .card__price {
+    font-size: 17px;
+    line-height: 1.41;
   }
 }

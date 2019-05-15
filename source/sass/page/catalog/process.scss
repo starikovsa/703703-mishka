@@ -2,13 +2,35 @@
   position: relative;
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 55px;
-  padding-bottom: 30px;
+  margin-bottom: 58px;
+  padding-top: 20px;
+  padding-bottom: 27px;
   border: 1px solid #ececec;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .process__header {
-  padding: 0 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 34px;
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .process__title {
@@ -16,10 +38,8 @@
   font-weight: bold;
   line-height: 1.41;
   margin: 0;
-  padding: 0;
-  padding-top: 25px;
-  padding-bottom: 21px;
-  padding-left: 57px;
+  margin-bottom: 26px;
+  padding-left: 90px;
 }
 
 .process__image {
@@ -68,9 +88,8 @@
   font-size: 13px;
   font-weight: normal;
   line-height: 1.85;
-  margin: 0 auto;
+  margin: 0 34px;
   margin-bottom: 25px;
-  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -80,6 +99,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
+    padding: 0;
     padding-bottom: 44px;
   }
 
@@ -96,6 +116,8 @@
   }
 
   .process__image {
+    width: 668px;
+    height: 455px;
     order: 1;
   }
 
@@ -126,16 +148,41 @@
 
 @media (min-width: 1150px) {
   .process {
+    position: relative;
     width: 1050px;
     margin: 0 auto;
     margin-bottom: 105px;
     flex-direction: column;
+    padding-left: 759px;
     flex-wrap: wrap;
+    padding-bottom: 60px;
+    box-sizing: border-box;
   }
 
   .process__header {
     width: 230px;
+    margin: 0 auto;
+    margin-bottom: 40px;
     padding: 0;
+    padding-top: 95px;
+  }
+
+  .process__title {
+    width: 150px;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .process__image-wrapper {
+    width: 682px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .process__image {
+    width: 682px;
+    margin: 0;
   }
 
   .process__description {
