@@ -287,6 +287,7 @@
 
   .main-header__content-wrapper {
     width: 668px;
+    min-height: 746px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -297,7 +298,12 @@
     background: {
       image: url("../img/hero-tablet@1x.jpg");
       repeat: no-repeat;
-      position: center;
+      position: center -5px;
+    }
+    background-size: 1150px 746px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
     }
   }
 
@@ -409,6 +415,15 @@
 
   .main-header__content-wrapper {
     width: 1050px;
+
+    background: {
+      image: url("../img/hero-desktop@1x.jpg");
+    }
+    background-size: 100%;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/hero-desktopt@2x.jpg");
+    }
   }
 
   .main-header__title {
