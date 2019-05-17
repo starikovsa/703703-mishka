@@ -28,6 +28,10 @@
 }
 
 @media (min-width: 768px) {
+  .form-block {
+    margin-top: -42px;
+  }
+
   .form-block__header {
     margin-bottom: 80px;
     padding-top: 100px;
