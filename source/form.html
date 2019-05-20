@@ -10,9 +10,17 @@
   <body>
     <header class="main-header">
         <div class="main-header__wrapper">
-            <nav class="main-header__navigation main-navigation">
+            <nav class="main-header__navigation main-navigation main-navigation--opened main-navigation--nojs">
               <ul class="main-navigation__list reset-list">
-                <li class="main-navigation__item main-navigation__item--logo"><a class="logo main-navigation__link main-navigation__link--logo" href="index.html"><img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="MISHKA"></a></li>
+                <li class="main-navigation__item main-navigation__item--logo main-navigation__item--active">
+                  <a class="logo main-navigation__link main-navigation__link--logo" href="index.html">
+                    <picture>
+                      <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                      <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="MISHKA">
+                    </picture>
+                  </a>
+                </li>
                 <li class="main-navigation__item main-navigation__item--catalog"><a class="main-navigation__link" href="catalog.html">Каталог товаров</a></li>
                 <li class="main-navigation__item main-navigation__item--order"><a class="main-navigation__link" href="form.html">Вязание на заказ</a></li>
                 <li class="main-navigation__item main-navigation__item--search"><a class="main-navigation__link main-navigation__link--search" href="search.html">
@@ -25,8 +33,8 @@
                 <li class="main-navigation__item main-navigation__item--sales"><a class="main-navigation__link" href="sales.html">Рапродажа</a></li>
                 <li class="main-navigation__item main-navigation__item--dellivery">Бесплатная доставка по России</li>
               </ul>
+              <button class="button main-navigation__toggle" type="button"><span class="visually-hidden">Меню</span></button>
             </nav>
-            <button class="button main-header__toggle" type="button">Меню</button>
             </div>
     </header>
     <main>
@@ -41,11 +49,11 @@
               <h3 class="type__title">Тип</h3>
               <div class="from__controls form__controls-type">
                 <p class="type__row">
-                  <input class="type__input"  type="radio" name="type" value="accessory" id="accessory" checked>
+                  <input class="type__input visually-hidden"  type="radio" name="type" value="accessory" id="accessory" checked>
                   <label class="type__label" for="accessory">Аксессуар для интерьера</label>
                 </p>
                 <p class="type__row">
-                  <input class="type__input" type="radio" name="type" value="toys" id="toys">
+                  <input class="type__input visually-hidden" type="radio" name="type" value="toys" id="toys">
                   <label class="type__label" for="toys">Детская игрушка</label>
                 </p>
               </div>
@@ -56,27 +64,27 @@
               <h3 class="color__title">Цвет</h3>
               <div class="from__controls form__controls-color">
                 <p class="color__row">
-                  <input class="color__input" type="checkbox" name="white" id="white" checked>
+                  <input class="color__input visually-hidden" type="checkbox" name="white" id="white" checked>
                   <label class="color__label" for="white">Белый</label>
                 </p>
                 <p class="color__row">
-                  <input class="color__input" type="checkbox" name="gray" id="gray" checked>
+                  <input class="color__input visually-hidden" type="checkbox" name="gray" id="gray" checked>
                   <label class="color__label" for="gray">Серый</label>
                 </p>
                 <p class="color__row">
-                  <input class="color__input" type="checkbox" name="tiffany" id="tiffany">
+                  <input class="color__input visually-hidden" type="checkbox" name="tiffany" id="tiffany">
                   <label class="color__label" for="tiffany">«Тиффани»</label>
                 </p>
                 <p class="color__row">
-                  <input class="color__input" type="checkbox" name="black" id="black">
+                  <input class="color__input visually-hidden" type="checkbox" name="black" id="black">
                   <label class="color__label" for="black">Черный</label>
                 </p>
                 <p class="color__row">
-                  <input class="color__input" type="checkbox" name="pink" id="pink">
+                  <input class="color__input visually-hidden" type="checkbox" name="pink" id="pink">
                   <label class="color__label" for="pink">Розовый</label>
                 </p>
                 <p class="color__row">
-                  <input class="color__input" type="checkbox" name="orange" id="orange">
+                  <input class="color__input visually-hidden" type="checkbox" name="orange" id="orange">
                   <label class="color__label" for="orange">Оранжевый</label>
                 </p>
               </div>
@@ -182,5 +190,22 @@
       </a>
       </div>
     </footer>
+
+    <script>
+        var navMain = document.querySelector('.main-navigation');
+        var navToggle = document.querySelector('.main-navigation__toggle');
+
+        navMain.classList.remove('main-navigation--nojs');
+
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('main-navigation--closed')) {
+            navMain.classList.remove('main-navigation--closed');
+            navMain.classList.add('main-navigation--opened');
+          } else {
+            navMain.classList.add('main-navigation--closed');
+            navMain.classList.remove('main-navigation--opened');
+          }
+        });
+      </script>
   </body>
 </html>

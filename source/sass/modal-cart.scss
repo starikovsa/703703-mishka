@@ -1,8 +1,95 @@
 .modal {
   display: none;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  z-index: 10;
+  width: 320px;
+  margin-left: -160px;
+  padding: 30px 30px 46px 30px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
 
 .modal-cart__title {
+  font-size: 25px;
+  line-height: 1.2;
   margin: 0;
-  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-cart__description {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 2;
+  color: #444444;
+  text-align: center;
+}
+
+.modal-cart__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.modal-cart__label {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 0.94;
+  vertical-align: bottom;
+  padding-top: 15px;
+  width: 82px;
+  height: 52px;
+  box-sizing: border-box;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  text-align: center;
+  color: #444444;
+
+  &:hover,
+  &:focus {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.modal-cart__input:checked + .modal-cart__label {
+  border-color: #63d1bb;
+}
+
+.modal-cart__input:hover + .modal-cart__label {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
+.modal-cart__button {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 0.94;
+  vertical-align: top;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #63d1bb;
+  background-color: #63d1bb;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

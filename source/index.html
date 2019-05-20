@@ -10,9 +10,9 @@
   <body>
     <header class="main-header main-header--index">
       <div class="main-header__wrapper">
-      <nav class="main-header__navigation main-navigation">
+      <nav class="main-header__navigation main-navigation main-navigation--opened main-navigation--nojs">
         <ul class="main-navigation__list reset-list">
-          <li class="main-navigation__item main-navigation__item--logo">
+          <li class="main-navigation__item main-navigation__item--logo main-navigation__item--active">
             <a class="logo main-navigation__link main-navigation__link--logo" href="index.html">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -33,8 +33,8 @@
           <li class="main-navigation__item main-navigation__item--sales"><a class="main-navigation__link" href="sales.html">Рапродажа</a></li>
           <li class="main-navigation__item main-navigation__item--dellivery">Бесплатная доставка по России</li>
         </ul>
+        <button class="button main-navigation__toggle" type="button"><span class="visually-hidden">Меню</span></button>
       </nav>
-      <button class="button main-header__toggle" type="button">Меню</button>
       </div>
       <section class="main-header__content">
         <div class="main-header__content-wrapper">
@@ -190,26 +190,41 @@
       </div>
     </footer>
     <section class="modal modal-cart">
+      <h2 class="modal-cart__title">Добавить в&nbsp;корзину</h2>
+      <p class="modal-cart__description">Выберите размер:</p>
       <form class="modal-form modal-cart__form"  method="get" action="https://echo.htmlacademy.ru">
-        <header class="modal-cart__header">
-          <h2 class="modal-cart__title">Добавить в корзину</h2>
-        </header>
-        <p class="modal-cart__description">Выберите размер:</p>
-        <ul class="modal-cart__list">
+        <ul class="modal-cart__list reset-list">
           <li class="modal-cart__item">
-            <input class="modal-cart__input" type="radio" name="size" value="size-s" id="size-s" checked>
+            <input class="modal-cart__input visually-hidden" type="radio" name="size" value="size-s" id="size-s" checked>
             <label class="modal-cart__label" for="size-s">S</label></li>
           <li class="modal-cart__item">
-            <input class="modal-cart__input" type="radio" name="size" value="size-m" id="size-m">
+            <input class="modal-cart__input visually-hidden" type="radio" name="size" value="size-m" id="size-m">
             <label class="modal-cart__label" for="size-m">M</label>
           </li>
           <li class="modal-cart__item">
-            <input class="modal-cart__input" type="radio" name="size" value="size-l" id="size-l">
+            <input class="modal-cart__input visually-hidden" type="radio" name="size" value="size-l" id="size-l">
             <label class="modal-cart__label" for="size-l">L</label>
           </li>
         </ul>
         <button class="button modal-cart__button modal-cart__button--add">Добавить</button>
       </form>
     </section>
+
+    <script>
+        var navMain = document.querySelector('.main-navigation');
+        var navToggle = document.querySelector('.main-navigation__toggle');
+
+        navMain.classList.remove('main-navigation--nojs');
+
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('main-navigation--closed')) {
+            navMain.classList.remove('main-navigation--closed');
+            navMain.classList.add('main-navigation--opened');
+          } else {
+            navMain.classList.add('main-navigation--closed');
+            navMain.classList.remove('main-navigation--opened');
+          }
+        });
+      </script>
   </body>
 </html>
