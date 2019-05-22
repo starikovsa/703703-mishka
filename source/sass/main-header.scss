@@ -14,8 +14,8 @@
 }
 
 .main-navigation__item {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 22px;
+  padding-bottom: 17px;
   padding-left: 76px;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
 
@@ -107,6 +107,7 @@
 
 .main-header__content {
   background-color: #f9f9f9;
+  margin-bottom: 29px;
 }
 
 .main-header__content-wrapper {
@@ -127,16 +128,18 @@
   font-size: 27px;
   font-weight: bold;
   line-height: 1.11;
-  margin-top: 0;
-  padding-top: 70px;
+  letter-spacing: 1.6px;
+  margin: 0;
+  padding-top: 72px;
   padding-right: 35px;
-  padding-bottom: 120px;
+  padding-bottom: 125px;
   padding-left: 35px;
 }
 
 .main-header__features-item {
-  width: 105px;
-  padding: 30px;
+  width: 110px;
+  padding: 25px;
+  padding-bottom: 30px;
   padding-right: 185px;
 
   &--interior {
@@ -145,6 +148,7 @@
   }
 
   &--toys {
+    padding-top: 28px;
     position: relative;
     background-color: #56c3b2;
   }
@@ -181,6 +185,7 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 1.26;
+  letter-spacing: 1.7px;
   color: #ffffff;
 
   &:active {
@@ -267,10 +272,12 @@
   .main-navigation__item {
     box-shadow: none;
     padding: 0;
+    font-size: 15px;
+    line-height: 1.6;
 
     &--logo {
       padding-top: 22px;
-      padding-right: 200px;
+      padding-right: 210px;
       padding-left: 50px;
       border-bottom: 1px solid #ececec;
     }
@@ -278,12 +285,12 @@
     &--catalog {
       margin-right: 35px;
       padding-top: 18px;
-      padding-left: 50px;
+      padding-left: 45px;
       order: 3;
     }
 
     &--order {
-      margin-right: 105px;
+      margin-right: 130px;
       padding-top: 18px;
       order: 4;
     }
@@ -297,8 +304,8 @@
     &--cart {
       padding-top: 31px;
       padding-bottom: 33px;
-      padding-left: 103px;
-      padding-right: 50px;
+      padding-left: 83px;
+      padding-right: 60px;
       border-bottom: 1px solid #ececec;
       order: 2;
     }
@@ -358,12 +365,12 @@
     justify-content: space-between;
     margin: 0 auto;
     margin-top: -43px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 
     background: {
       image: url("../img/hero-tablet@1x.jpg");
       repeat: no-repeat;
-      position: center -5px;
+      position: center;
     }
     background-size: 1150px 746px;
 
@@ -376,8 +383,10 @@
     width: 494px;
     font-size: 43px;
     text-align: center;
+    letter-spacing: 2.2px;
     margin: 0 auto;
     margin-bottom: 205px;
+    padding-top: 155px;
   }
 
   .main-header__features-list {
@@ -395,7 +404,7 @@
 
 @media (min-width: 1150px) {
   .main-header__wrapper {
-    width: 1050px;
+    width: 1150px;
   }
 
   .main-navigation__list {
@@ -404,12 +413,13 @@
 
   .main-navigation__item {
     box-shadow: none;
+    letter-spacing: 1px;
 
     &--catalog {
       margin: 0;
       padding-top: 30px;
-      padding-right: 40px;
-      padding-left: 0;
+      padding-right: 33px;
+      padding-left: 50px;
       border-bottom: 1px solid #ececec;
       order: 1;
     }
@@ -427,7 +437,8 @@
 
     &--logo {
       padding-top: 10px;
-      padding-right: 87px;
+      padding-left: 35px;
+      padding-right: 102px;
       order: 3;
     }
 
@@ -436,15 +447,13 @@
     }
 
     &--cart {
-      padding-left: 73px;
-      padding-right: 50px;
+      padding-left: 85px;
+      padding-right: 29px;
       order: 5;
     }
 
     &--new {
       display: inline-block;
-      font-size: 15px;
-      line-height: 1.6;
       margin-right: 55px;
       padding-top: 18px;
       padding-left: 50px;
@@ -453,17 +462,23 @@
 
     &--sales {
       display: inline-block;
-      font-size: 15px;
-      line-height: 1.6;
-      margin-right: 390px;
+      margin-right: 500px;
       padding-top: 18px;
       order: 7;
     }
 
     &--dellivery {
       display: inline-block;
-      padding-right: 50px;
+      letter-spacing: 0.1px;
       order: 8;
+    }
+  }
+
+  .main-navigation__link {
+    &--new,
+    &--sales {
+      font-size: 15px;
+      line-height: 1.6;
     }
   }
 
@@ -474,8 +489,8 @@
 
   .main-navigation__item--cart::before {
     content: "";
-    top: 31px;
-    left: 25px;
+    top: 35px;
+    left: 35px;
   }
 
   .main-header__content-wrapper {

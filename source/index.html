@@ -29,8 +29,8 @@
               </svg>
             <span class="main-navigation__hidden">Поиск по сайту</span></a></li>
           <li class="main-navigation__item main-navigation__item--cart"><a class="main-navigation__link" href="cart.html">Корзина: пока пусто</a></li>
-          <li class="main-navigation__item main-navigation__item--new"><a class="main-navigation__link" href="new-collection.html">Новые поступления</a></li>
-          <li class="main-navigation__item main-navigation__item--sales"><a class="main-navigation__link" href="sales.html">Рапродажа</a></li>
+          <li class="main-navigation__item main-navigation__item--new"><a class="main-navigation__link main-navigation__link--new" href="new-collection.html">Новые поступления</a></li>
+          <li class="main-navigation__item main-navigation__item--sales"><a class="main-navigation__link main-navigation__link-sales" href="sales.html">Рапродажа</a></li>
           <li class="main-navigation__item main-navigation__item--dellivery">Бесплатная доставка по России</li>
         </ul>
         <button class="button main-navigation__toggle" type="button"><span class="visually-hidden">Меню</span></button>
@@ -57,15 +57,15 @@
           <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="promo__specifications">
             <tr class="promo__specifications-row">
-              <td class="promo__specifications-cell">Цвет:</td>
+              <td class="promo__specifications-cell promo__specifications-cell--parameter">Цвет:</td>
               <td class="promo__specifications-cell">«Тиффани»/серый</td>
             </tr>
             <tr class="promo__specifications-row">
-              <td class="promo__specifications-cell">Диаметр:</td>
+              <td class="promo__specifications-cell promo__specifications-cell--parameter">Диаметр:</td>
               <td class="promo__specifications-cell"> 25 см</td>
             </tr>
             <tr class="promo__specifications-row">
-              <td class="promo__specifications-cell">Высота:</td>
+              <td class="promo__specifications-cell promo__specifications-cell--parameter">Высота:</td>
               <td class="promo__specifications-cell">15 см</td>
             </tr>
           </table>
@@ -86,12 +86,12 @@
           <h2 class="about-us__title">Коротко о нас:</h2>
         </header>
         <ul class="about-us__list reset-list">
-          <li class="about-us__item about-us__item--flower">Экологически чистые материалы</li>
-          <li class="about-us__item about-us__item--price">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item about-us__item--heart">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item about-us__item--clew">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item about-us__item--flower">Экологически чистые&nbsp;материалы</li>
+          <li class="about-us__item about-us__item--price">Скандинавский стиль по&nbsp;российской цене</li>
+          <li class="about-us__item about-us__item--heart">Увеличивает лайки на&nbsp;фотографиях</li>
+          <li class="about-us__item about-us__item--clew">Связано вручную с любовью&nbsp;и умилением</li>
           <li class="about-us__item about-us__item--rocket">Поддержка отечественного производителя</li>
-          <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</li>
+          <li class="about-us__item about-us__item--gift">Поставляется в подарочной&nbsp;упаковке</li>
         </ul>
       </section>
       <section class="reviews">
@@ -120,9 +120,9 @@
           <p class="contacts__data-cell contacts__data-cell--description">e-mail:</p>
           <p class="contacts__data-cell contacts__data-cell--address contacts__data-cell--underline"><a class="contacts__data-link--underline" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
           <p class="contacts__data-cell contacts__data-cell--description">адрес:</p>
-          <p class="contacts__data-cell contacts__data-cell--address">Санкт-Петербург,
-            ул. Большая Конюшенная,
-            д. 19/8, офис 101</p>
+          <p class="contacts__data-cell contacts__data-cell--address">г. Санкт-Петербург,
+            ул.&nbsp;Большая Конюшенная,
+            д.&nbsp;19/8,&nbsp;офис 101</p>
         </address>
         <div class="contacts__map">
           <iframe class="contacts__iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.228299035156!2d30.319152398666034!3d59.93880745879282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1554315678599!5m2!1sru!2sru" width="320" height="457" allowfullscreen title="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"></iframe>
@@ -141,7 +141,7 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
       <a class="logo main-footer__logo" href="index.html">
-        <img class="logo__image" src="img/logo-footer.svg" width="86" height="35" alt="MISHKA"></a>
+        <img class="logo__image logo__image--footer" src="img/logo-footer.svg" width="86" height="35" alt="MISHKA"></a>
       <ul class="main-footer__social-list reset-list">
         <li class="main-footer__social-item">
           <a class="main-footer__social-link main-footer__social-link--instagram" href="https://www.instagram.com/htmlacademy">
@@ -209,6 +209,7 @@
         <button class="button modal-cart__button modal-cart__button--add">Добавить</button>
       </form>
     </section>
+    <div class="modal-background"></div>
 
     <script>
         var navMain = document.querySelector('.main-navigation');
