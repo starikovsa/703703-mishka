@@ -33,6 +33,20 @@
   line-height: 0;
 }
 
+.card__link-title {
+  text-decoration: none;
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .card__wrapper {
   border: solid 1px #ececec;
   padding-left: 28px;
@@ -47,7 +61,6 @@
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
-
 
 .card__title {
   font-size: 17px;
@@ -111,8 +124,21 @@
   }
 
   .catalog__header {
+    position: relative;
     margin-top: -42px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      bottom: -12px;
+      left: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 100%;
+      background-repeat: repeat-x;
+    }
   }
 
   .catalog__title {
@@ -121,7 +147,7 @@
     line-height: 1.16;
     text-align: center;
     padding-top: 95px;
-    padding-bottom: 52px;
+    padding-bottom: 82px;
   }
 
   .catalog__card {
@@ -169,11 +195,20 @@
 }
 
 @media (min-width: 1150px) {
+  .catalog__header {
+    &::after {
+      height: 34px;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
   .catalog__title {
     font-size: 53px;
     line-height: 1.08;
     letter-spacing: 2px;
-    margin-bottom: 170px;
+    margin-bottom: 108px;
+    padding-bottom: 115px;
   }
 
   .catalog__list {

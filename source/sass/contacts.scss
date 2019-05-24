@@ -39,12 +39,19 @@
   }
 }
 
-.contacts__data-link {
-  &--underline {
-    text-decoration: none;
-    color: #444444;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #56c3b2;
+.contacts__data-link--underline {
+  text-decoration: none;
+  color: #444444;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #56c3b2;
+
+  &:hover,
+  :focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
