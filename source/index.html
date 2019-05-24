@@ -10,7 +10,7 @@
   <body>
     <header class="main-header main-header--index">
       <div class="main-header__wrapper">
-        <nav class="main-header__navigation main-navigation main-navigation--opened main-navigation--nojs">
+        <nav class="main-header__navigation main-navigation main-navigation--closed main-navigation--nojs">
           <ul class="main-navigation__list reset-list">
             <li class="main-navigation__item main-navigation__item--logo main-navigation__item--active">
               <a class="logo main-navigation__link main-navigation__link--logo" href="index.html">
@@ -25,8 +25,8 @@
             <li class="main-navigation__item main-navigation__item--order"><a class="main-navigation__link" href="form.html">Вязание на заказ</a></li>
             <li class="main-navigation__item main-navigation__item--search">
               <a class="main-navigation__link main-navigation__link--search" href="search.html">
-               <svg class="main-navigation__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-                 <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+                <svg class="main-navigation__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                  <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
                 </svg>
                 <span class="main-navigation__hidden">Поиск по сайту</span>
               </a>
@@ -87,7 +87,7 @@
             <img class="promo__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" srcset="img/triple-set-mobile@1x.jpg 2x" alt="Изображение товара">
           </picture>
           <p class="promo__price">Цена: 990 руб.</p>
-          <a class="button promo__button promo__button--buy" href="order.html">Заказать</a>
+          <a class="button promo__button promo__button--buy modal-buy" href="order.html">Заказать</a>
         </article>
       </section>
       <section class="about-us">
@@ -219,22 +219,6 @@
       </form>
     </section>
     <div class="modal-background"></div>
-
-    <script>
-        var navMain = document.querySelector('.main-navigation');
-        var navToggle = document.querySelector('.main-navigation__toggle');
-
-        navMain.classList.remove('main-navigation--nojs');
-
-        navToggle.addEventListener('click', function() {
-          if (navMain.classList.contains('main-navigation--closed')) {
-            navMain.classList.remove('main-navigation--closed');
-            navMain.classList.add('main-navigation--opened');
-          } else {
-            navMain.classList.add('main-navigation--closed');
-            navMain.classList.remove('main-navigation--opened');
-          }
-        });
-      </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
