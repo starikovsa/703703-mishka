@@ -317,12 +317,14 @@
       padding-top: 18px;
       padding-left: 45px;
       order: 3;
+      z-index: 1;
     }
 
     &--order {
       margin-right: 130px;
       padding-top: 18px;
       order: 4;
+      z-index: 1;
     }
 
     &--search {
@@ -348,6 +350,7 @@
       display: inline-block;
       padding-top: 18px;
       order: 5;
+      z-index: 1;
     }
   }
 
