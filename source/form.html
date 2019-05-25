@@ -5,6 +5,8 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
@@ -127,7 +129,7 @@
               <h3 class="contact__title-phone">Тел</h3>
               <p class="contact__row">
                 <label class="contact__label visually-hidden" for="phone">Телефон</label>
-                <input class="contact__input" type="text" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <input class="contact__input" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 <span class="contact__icon contact__icon--phone">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24.829px" height="24.333px">
                       <use xlink:href="#icon-phone"></use>
@@ -137,7 +139,7 @@
               <h3 class="contact__title-email">E-mail</h3>
               <p class="contact__row">
                 <label class="contact__label visually-hidden" for="email">e-mail</label>
-                <input class="contact__input" type="text" name="email" id="email" placeholder="Ваш Email*" required>
+                <input class="contact__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
                 <span class="contact__icon contact__icon--email">
                   <svg  xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
                     <use xlink:href="#icon-mail"></use>
