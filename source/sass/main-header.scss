@@ -384,13 +384,13 @@
     opacity: 0.2;
   }
 
-  .main-navigation__link:hover path,
-  .main-navigation__link:focus path {
+  .main-navigation__link:hover .main-navigation__icon,
+  .main-navigation__link:focus .main-navigation__icon {
     opacity: 1;
     fill: #63d1bb;
   }
 
-  .main-navigation__link:active path {
+  .main-navigation__link:active .main-navigation__icon {
     opacity: 0.3;
   }
 
