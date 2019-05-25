@@ -9,6 +9,7 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -39,3 +40,13 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
+
+gulp.task("images", function() {
+  return gulp.src("source/img/**/*.{png,jpg,svg,webp}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"));
+});
